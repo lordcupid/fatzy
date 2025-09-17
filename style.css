@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ...existing code... */
+
+.headerWrapper {
+    background-image: url('./images/fatzy1.jpg'); /* Use your actual image path */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 700px; /* Adjust height as needed */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+/* ...existing code... */
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 3rem;
+}
+
+.nav ul{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bio{
+ background-color: black;
+}
+.bio-container{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 64px;
+    max-width: 1200px;
+    padding: 3rem;
+}
+.bio-left{
+    width: 100%;
+
+}
+.bioImg{
+    width: 100%;
+    
+}
+
+.bioImg img{
+    width: 500px;
+    height: auto;
+    
+}
+
+
+
+.bio-right p{
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: rgb(173, 181, 189);
+}
+
+.bio-heading{
+    margin-bottom: 28px;
+}
+.bio-heading h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: rgb(173, 181, 189);
+   
+}
