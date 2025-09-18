@@ -1,137 +1,156 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
 
 /* ...existing code... */
 
-.headerWrapper {
-    background-image: url('./images/fatzy1.jpg'); /* Use your actual image path */
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    min-height: 700px; /* Adjust height as needed */
+.hero {
+  background-image: url("./images/fatzy1.jpg"); /* Use your actual image path */
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+/* ...existing code... */
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 5;
+}
+
+.nav-container {
+  position: fixed; /* floats on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: transparent; /* no background at top */
+  color: white;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.nav-container:scrolled {
+  background: rgba(0, 0, 0, 0.8); /* solid when scrolling */
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.bio {
+  background-color: black;
+  width: 100%;
+}
+.bio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 64px;
+  max-width: 1200px;
+  padding: 3rem;
+}
+.bio-left {
+  width: 100%;
+}
+.bioImg {
+  width: 100%;
+}
+
+.bioImg img {
+  width: 500px;
+  height: auto;
+}
+
+.bio-right p {
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: rgb(173, 181, 189);
+}
+
+.bio-heading {
+  margin-bottom: 28px;
+}
+.bio-heading h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: rgb(173, 181, 189);
+}
+
+@media (max-width: 430px) {
+  .nav {
+    display: none;
+  }
+  .bio {
+    background-color: black;
     width: 100%;
+  }
+
+  .bio-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    
-}
-/* ...existing code... */
+    /* max-width: 1200px; */
+    padding: 1rem;
+  }
 
-
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    padding: 3rem;
-}
-
-.nav ul{
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.bio{
- background-color: black;
- width: 100%;
-}
-.bio-container{
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    margin-top: 64px;
-    max-width: 1200px;
-    padding: 3rem;
-}
-.bio-left{
-    width: 100%;
-
-}
-.bioImg{
-    width: 100%;
-    
-}
-
-.bioImg img{
-    width: 500px;
-    height: auto;
-    
-}
-
-
-
-.bio-right p{
-    font-family: Manrope, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 28.8px;
-    color: rgb(173, 181, 189);
-}
-
-.bio-heading{
-    margin-bottom: 28px;
-}
-.bio-heading h3{
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 28.8px;
-    color: rgb(173, 181, 189);
-   
-}
-
-@media (max-width:430px) {
-
-    .nav{
-        display: none;
-    }
-    .bio{
-        background-color: black;
-        width: 100%;
-    }
-
-    .bio-container{
-        display: flex;
-        flex-direction: column;
-        /* max-width: 1200px; */
-        padding: 1rem;
-    }
-
-    .bio-right p{
+  .bio-right p {
     font-family: Manrope, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 18.8px;
     color: rgb(173, 181, 189);
-}
+  }
 
-.bio-heading{
+  .bio-heading {
     margin-bottom: 16px;
-}
-.bio-heading h3{
-    font-size:18px;
+  }
+  .bio-heading h3 {
+    font-size: 18px;
     font-weight: 400;
     line-height: 18.8px;
     color: rgb(173, 181, 189);
-   
-}
+  }
 
-.bioImg{
+  .bioImg {
     width: 100%;
-    
-}
+  }
 
-.bioImg img{
+  .bioImg img {
     display: block;
     width: 50%;
-    
-    
+  }
 }
-
-    }
-
